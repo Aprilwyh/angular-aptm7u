@@ -21,6 +21,8 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 export class UnlessDirective {
   private hasView = false;
 
+  // 使用TemplateRef取得 <ng-template> 的内容
+  // 通过ViewContainerRef来访问这个视图容器
   constructor(
     private templateRef: TemplateRef<any>,
     private viewContainer: ViewContainerRef) { }
